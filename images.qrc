@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/align-l.svg</file>
+        <file>resource/archive.svg</file>
+        <file>resource/arrow-down-l.svg</file>
+        <file>resource/download.svg</file>
+        <file>resource/log-in.svg</file>
+        <file>resource/log-out.svg</file>
+        <file>resource/maximize.svg</file>
+        <file>resource/minimize.svg</file>
+        <file>resource/minus.svg</file>
+        <file>resource/search.svg</file>
+        <file>resource/upload.svg</file>
+        <file>resource/x.svg</file>
+        <file>resource/square.svg</file>
+    </qresource>
+</RCC>
