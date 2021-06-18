@@ -1,7 +1,11 @@
 #include "mainwindow.h"
-
+#include "jsoncalls.h"
 #include <QApplication>
 #include <QWindow>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QtNetwork>
+
 
 int main(int argc, char *argv[])
 {

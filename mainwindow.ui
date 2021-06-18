@@ -156,7 +156,17 @@
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color: transparent;</string>
+                <string notr="true">QPushButton{
+icon: url(:/resource/align-l.svg);
+background-repeat: no-repeat;
+background-color: transparent;
+border: 0px solid;
+}
+QPushButton:hover{
+	icon: url(:/resource/red/align-l.svg);
+    background-repeat: no-repeat;
+}
+</string>
                </property>
                <property name="text">
                 <string/>
@@ -227,7 +237,17 @@
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color: transparent;</string>
+                <string notr="true">QPushButton{
+icon: url(:/resource/minus.svg);
+background-repeat: no-repeat;
+background-color: transparent;
+border: 0px solid;
+}
+QPushButton:hover{
+	icon: url(:/resource/red/minus.svg);
+    background-repeat: no-repeat;
+}
+</string>
                </property>
                <property name="text">
                 <string/>
@@ -259,7 +279,17 @@
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color: transparent;</string>
+                <string notr="true">QPushButton{
+icon: url(:/resource/square.svg);
+background-repeat: no-repeat;
+background-color: transparent;
+border: 0px solid;
+}
+QPushButton:hover{
+	icon: url(:/resource/red/square.svg);
+    background-repeat: no-repeat;
+}
+</string>
                </property>
                <property name="text">
                 <string/>
@@ -291,14 +321,17 @@
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color: transparent;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="images.qrc">
-                 <normaloff>:/resource/x.svg</normaloff>:/resource/x.svg</iconset>
+                <string notr="true">QPushButton{
+icon: url(:/resource/x.svg);
+background-repeat: no-repeat;
+background-color: transparent;
+border: 0px solid;
+
+}
+QPushButton:hover{
+	icon: url(:/resource/red/x.svg);
+    background-repeat: no-repeat;
+}</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -459,12 +492,14 @@
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton{
+	icon: url(:/resource/log-in.svg);
 	color: rgb(255,255,255);
-	background-color: rgb(35,35,35);
+	background-color: transparent;
+	background-repeat: no-repeat;
 	border: 0px solid;
 }
 QPushButton:hover {
-	background-color: rgb(85,170,255);
+	icon: url(:/resource/red/log-in.svg);
 }</string>
                </property>
                <property name="text">
@@ -507,12 +542,14 @@ QPushButton:hover {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton{
+	icon: url(:/resource/archive.svg);
 	color: rgb(255,255,255);
-	background-color: rgb(35,35,35);
+	background-color: transparent;
+	background-repeat: no-repeat;
 	border: 0px solid;
 }
 QPushButton:hover {
-	background-color: rgb(85,170,255);
+	icon: url(:/resource/red/archive.svg);
 }</string>
                </property>
                <property name="text">
@@ -546,12 +583,14 @@ QPushButton:hover {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton{
+	icon: url(:/resource/search.svg);
 	color: rgb(255,255,255);
-	background-color: rgb(35,35,35);
+	background-color: transparent;
+	background-repeat: no-repeat;
 	border: 0px solid;
 }
 QPushButton:hover {
-	background-color: rgb(85,170,255);
+	icon: url(:/resource/red/search.svg);
 }</string>
                </property>
                <property name="text">
@@ -588,12 +627,14 @@ QPushButton:hover {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton{
+	icon: url(:/resource/log-out.svg);
 	color: rgb(255,255,255);
-	background-color: rgb(35,35,35);
+	background-color: transparent;
+	background-repeat: no-repeat;
 	border: 0px solid;
 }
 QPushButton:hover {
-	background-color: rgb(85,170,255);
+	icon: url(:/resource/red/log-out.svg);
 }</string>
                </property>
                <property name="text">
@@ -622,18 +663,58 @@ QPushButton:hover {
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <widget class="QStackedWidget" name="Pages_Widget">
-          <property name="geometry">
-           <rect>
-            <x>-1</x>
-            <y>-1</y>
-            <width>1281</width>
-            <height>671</height>
-           </rect>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
           </property>
-          <widget class="QWidget" name="pageLogin"/>
-          <widget class="QWidget" name="pageLogout"/>
-         </widget>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="PagesWidget">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="pageLogin"/>
+            <widget class="QWidget" name="pageBrowser">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QListWidget" name="fileListWidget">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pageLogout"/>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>

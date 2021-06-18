@@ -13,5 +13,19 @@
         <file>resource/upload.svg</file>
         <file>resource/x.svg</file>
         <file>resource/square.svg</file>
+        <file>resource/red/align-l.svg</file>
+        <file>resource/red/archive.svg</file>
+        <file>resource/red/arrow-down-l.svg</file>
+        <file>resource/red/download.svg</file>
+        <file>resource/red/log-in.svg</file>
+        <file>resource/red/log-out.svg</file>
+        <file>resource/red/maximize.svg</file>
+        <file>resource/red/minimize.svg</file>
+        <file>resource/red/minus.svg</file>
+        <file>resource/red/search.svg</file>
+        <file>resource/red/square.svg</file>
+        <file>resource/red/upload.svg</file>
+        <file>resource/red/x.svg</file>
+        <file>resource/file.svg</file>
     </qresource>
 </RCC>
